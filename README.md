@@ -33,11 +33,15 @@ cd server
 
 Ejecutar Docker Compose:
 
+```Bash
 docker-compose up -d
+```
 
 MongoDB quedará disponible en:
 
+```Bash
 mongodb://localhost:27017
+```
 
 ---
 
@@ -45,23 +49,33 @@ mongodb://localhost:27017
 
 ## 1. Entrar al backend
 
+```Bash
 cd server
+```
 
 ## 2. Instalar dependencias
 
+```Bash
 npm install
+```
 
 ## 3. Variables de entorno (.env en /server)
 
+```Bash
 MONGO_URI=mongodb://admin:admin123@localhost:27017/anxiety-db?authSource=admin
+```
 
 ## 4. Ejecutar backend
 
+```Bash
 npm run start:dev
+```
 
 Backend disponible en:
 
+```Bash
 http://localhost:3000
+```
 
 ---
 
@@ -79,15 +93,21 @@ Esperar sincronización completa
 
 Emulador Android:
 
+```Bash
 http://10.0.2.2:3000
+```
 
 Dispositivo físico:
 
+```Bash
 http://TU_IP_LOCAL:3000
+```
 
 Ejemplo:
 
+```Bash
 http://192.168.1.10:3000
+```
 
 ## 4. Ejecutar aplicación
 
@@ -101,20 +121,24 @@ El backend incluye docker-compose.yml dentro de /server para levantar MongoDB.
 
 Comando:
 
+```Bash
 docker-compose up -d
+```
 
 Detener:
 
+```Bash
 docker-compose down
+```
 
 ---
 
 # ENDPOINTS
 
-GET /anxiety/:user
+### GET /anxiety/:user
 Obtiene registros de ansiedad del usuario
 
-POST /anxiety
+### POST /anxiety
 Guarda registros diarios de clicks de ansiedad
 
 ---
