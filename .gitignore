@@ -1,0 +1,62 @@
+# =========================
+# NODE / NEST
+# =========================
+
+node_modules/
+dist/
+coverage/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+.env*
+
+# =========================
+# ANDROID / KOTLIN
+# =========================
+
+*.iml
+.gradle/
+local.properties
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android Studio
+mobile/.idea/
+mobile/.gradle/
+mobile/build/
+mobile/app/build/
+
+# APKs
+*.apk
+*.aab
+
+# Logs
+*.log
+
+# Kotlin
+*.class
+*.jar
+
+# =========================
+# MAC / WINDOWS
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# VERCEL
+# =========================
+
+.vercel
+
+# =========================
+# TYPESCRIPT
+# =========================
+
+*.tsbuildinfo

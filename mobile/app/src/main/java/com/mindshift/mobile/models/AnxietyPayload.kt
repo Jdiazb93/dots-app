@@ -1,4 +1,10 @@
 package com.mindshift.mobile.models
 
-class AnxietyPayload {
-}
+data class AnxietyPayload(
+
+    val user: String,
+
+    val clicksCount: Int,
+
+    val date: String
+)
